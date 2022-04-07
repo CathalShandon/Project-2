@@ -1,4 +1,10 @@
 /*--- global style */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("/assets/images/europe.png");
@@ -9,33 +15,54 @@ body {
 
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5rem; 
+#heading {
+    float: left;
+    margin-left: 50px;
+    padding: 15px;
+    color: #fff;
 }
+
+
 /* navigation links */
-
-#navigation {
-    font-size: 110%;
-    letter-spacing: 4px;
-    background-color: aqua;
-    position: top-right;
+.menu-bar {
+	background: #06467F;
+	text-align: right;
 }
 
-#navigation li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+    font-size: 20px;
 }
-#navigation a:hover {
-    border-bottom: 1px solid #3a3a3a;
+
+.menu-bar ul li {
+	width: 100%;
+	margin: 15px;
+	padding: 15px;
+    position: right;
+}
+
+.menu-bar ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-bar ul li:hover {
+	background: #2bab0d;
+	border-radius: 10px;
 }
 /* --------- Game layout */
 
 #quiz-container {
     background-color: aqua;
+    margin: 5rem 12rem;
+    border-radius: 2rem;
 }
-
+#question {
+    text-align: center;
+    padding-top: 2rem;
+}
 ol{
     display: inline-block;
     padding: 0 1.5rem;
@@ -48,4 +75,13 @@ p {
 
 .form-layout {
     background-color: aqua;
+}
+/* feeback page */
+#contact-heading {
+    text-align: center;
+}
+
+#comment {
+    width: 850px;
+    height: 330px;
 }
