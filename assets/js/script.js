@@ -1,3 +1,5 @@
+// array of Questions and Answers.
+
 let questionBank = [
 {
     question : 'What is the captial of France',
@@ -49,7 +51,7 @@ let questionBank = [
     option : ['Ghent', 'Brussels', 'Reims', 'Dresden'],
     answer : 'Brussels'
 },
-s
+
 ];
 
 var question = document.getElementById('question');

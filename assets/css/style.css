@@ -12,9 +12,24 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5rem; 
-    padding-top: 3rem;
+}
+/* navigation links */
+
+#navigation {
+    font-size: 110%;
+    letter-spacing: 4px;
+    background-color: aqua;
+    position: top-right;
 }
 
+#navigation li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+#navigation a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
 /* --------- Game layout */
 
 #quiz-container {
@@ -29,4 +44,8 @@ ol{
 
 p {
     display: inline-block;
+}
+
+.form-layout {
+    background-color: aqua;
 }
