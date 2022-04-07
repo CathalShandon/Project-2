@@ -19,7 +19,7 @@ let questionBank = [
 {
     question : 'What is the captial of Moldova?',
     option : ['Balti', 'Sofia', 'Szeged', 'Chisinau'],
-    answer : 'Chisinau'
+    aswer : 'Chisinau'
 },
 {
     question : 'What is the captial of Ukraine?',
@@ -87,7 +87,7 @@ var option1 = document.getElementById('option1');
 var option2 = document.getElementById('option2');
 var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
-var points = document.getElementById('score');
+var points = document.getElementById('answer');
 var span = document.querySelectorAll('span');
 var i = 0;
 var score = 0;
@@ -117,7 +117,7 @@ function calcScore(e){
 
 //Function to display next question
 function nextQuestion(){
-    if(i<questionBank.length-1)
+    if(i<questionBank.length-0)
     {
         i=i+1;
         displayQuestion();
@@ -149,22 +149,18 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
-/**
- * Gets the current score from the DOM and increments it by 1
- */
- function incrementScore() {
+// increament score for correct answers
 
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+function increamentScore(correctAnswerCount) {
+    document.getElementById("right-answer").innerText = correctAnswerCount;
+    score= score+1;
+}
+
+// increament score for wrong answers
+function increamentWrongAnswer(wrongAnswerCount) {
+    document.getElementById("wrong-answer").innerText = wrongAnswerCount;
 
 }
 
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
- */
-function incrementWrongAnswer() {
+/* final score box */
 
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-    
-}

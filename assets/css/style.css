@@ -51,6 +51,7 @@ body {
 .menu-bar ul li:hover {
 	background: #2bab0d;
 	border-radius: 10px;
+    cursor: pointer;
 }
 /* Hero image */ 
 #hero-image {
@@ -84,8 +85,9 @@ body {
 	position: relative;
     transform: translate(128px, -376px);
     font-size: 36px;
-    background-color: #a41e42;
-    color:darkgray;
+    background-color:blue;
+    color:darkgray; 
+    cursor: pointer;
 }
 /* home page */
 .go-to-quiz {
@@ -117,8 +119,11 @@ ol{
     padding: 0 1.5rem;
     color: rgb(1,73,73);
     font-size: 22px;
+    cursor: pointer;
 }
-
+#questionCount {
+    font-size: 22px;
+}
 p {
     display: inline-block;
     font-size: 20px;
@@ -126,10 +131,22 @@ p {
 .buttons {
     font-size: 20px;
 }
-
+.next {
+    font-size: 22px;
+}
+.next:hover {
+    cursor: pointer;
+    font-size: 27px;
+}
 .form-layout {
     background-color: aqua;
-
+}
+/* feeback page */
+.contact-form {
+    background-color: aqua;
+    margin: 5rem 15rem 5rem 15rem;
+    padding: 1rem;
+}
 /* feeback page */
 #contact-heading {
     text-align: center;
@@ -138,4 +155,24 @@ p {
 #comment {
     width: 850px;
     height: 330px;
+}
+.contact-details {
+    font-size: 22px;
+}
+#email {
+    font-size: 22px;
+}
+#fname.text-adjust {
+    font-size: 22px;
+}
+#additional-remarks {
+    width: 700px;
+    height: 250px;
+}
+.submit-button {
+    font-size: 22px;
+}
+.submit-button:hover {
+    cursor: pointer;
+    font-size: 24px;
 }
