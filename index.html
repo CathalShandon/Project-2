@@ -10,6 +10,8 @@
 <body>
     <h1 class="title">How well do you know Europe?</h1>
    
+    <!-- quiz-container -->
+    <div id="quiz-container">
     <div id="question"></div>
     <ol type="A">
         <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
@@ -18,6 +20,18 @@
         <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
     </ol>
     <div id="questionCount"></div>
+
+    <div class="buttons">
+        <button type="button" id="next" class="next">Next</button>
+        <button type="button" value="Refresh" onClick="refresh(this)">Reset</button>
+    </div>
+
+<!-- scoreboard section -->
+<div class="score-area">
+    <p class="scores">Correct Answers <span id="score">0</span></p>
+    <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+</div>
+</div>
 
 
     <script src="assets/js/script.js"></script>
