@@ -72,22 +72,31 @@ body {
 	border-radius: 30px;
 }
 .headline {
-    background-color: #a41e42;
+    background-color:darkgrey;
     position: absolute;
     top: 40%;
     padding: 10px; 
     font-size: 29px;
     transform: translate(414px, -50px);
-    color: #fef0f5;
+    color:#a41e42;
 }
 .start-quiz {
 	position: relative;
-    transform: translate(-357px, 69px);
+    transform: translate(128px, -376px);
     font-size: 36px;
     background-color: #a41e42;
-    color: #fef0f5;
+    color:darkgray;
 }
-
+/* home page */
+.go-to-quiz {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.go-to-quiz:hover{
+    border-radius: 10px;
+    font-size: 50px;
+}
 /* --------- Game layout */
 
 #quiz-container {
@@ -98,6 +107,7 @@ body {
 #question {
     text-align: center;
     padding-top: 2rem;
+    font-size: 23px;
 }
 .option:hover{
     color: white;
@@ -106,17 +116,20 @@ ol{
     display: inline-block;
     padding: 0 1.5rem;
     color: rgb(1,73,73);
-    font-size: 20px;
+    font-size: 22px;
 }
 
 p {
     display: inline-block;
     font-size: 20px;
 }
+.buttons {
+    font-size: 20px;
+}
 
 .form-layout {
     background-color: aqua;
-}
+
 /* feeback page */
 #contact-heading {
     text-align: center;

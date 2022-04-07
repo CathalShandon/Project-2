@@ -51,6 +51,31 @@ let questionBank = [
     option : ['Ghent', 'Brussels', 'Reims', 'Dresden'],
     answer : 'Brussels'
 },
+{
+    question : 'What is the captial of Scotland?',
+    option : ['Athens', 'Glasglow', 'Brest', 'Edinburgh'],
+    answer : 'Edinburgh'
+},
+{
+    question : 'What is the captial of Slovenia?',
+    option : ['Bratislava', 'Ljubljana', 'Maribor', 'Graz'],
+    answer : 'Ljubljana'
+},
+{
+    question : 'What is the captial of Slovakia?',
+    option : ['Eger', 'Bratislava', 'Linz', 'Split'],
+    answer : 'Bratislava'
+},
+{
+    question : 'What is the captial of Bosnia and Herzegovina?',
+    option : ['Sarajeve', 'Tuzla', 'Debrecen', 'Presov'],
+    answer : 'Sarajevo'
+},
+{
+    question : 'What is the captial of North Macedonia?',
+    option : ['Bitola', 'Durres', 'Tirana', 'Skopje'],
+    answer : 'Skopje'
+},
 
 ];
 
