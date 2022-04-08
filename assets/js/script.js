@@ -1,4 +1,4 @@
-//Question bank
+/* array of Questions and Answers.*/
 let questionBank = [
     {
         question : 'What is the captial of France?',
@@ -8,7 +8,7 @@ let questionBank = [
     {
         question : 'What is the captial of Croatia?',
         option : ['Lyon', 'Berlin', 'Zagreb', 'Moscow'],
-        rightAnswer : 'Zagreb'
+        answer : 'Zagreb'
     },
     {
         question : 'What is the captial of Austria?',
@@ -18,7 +18,7 @@ let questionBank = [
     {
         question : 'What is the captial of Moldova?',
         option : ['Balti', 'Sofia', 'Szeged', 'Chisinau'],
-        aswer : 'Chisinau'
+        answer : 'Chisinau'
     },
     {
         question : 'What is the captial of Ukraine?',
@@ -184,4 +184,9 @@ function checkAnswer() {
 
 }
 
-/* array of Questions and Answers.*/
+/* Countdown timer */
+
+/* Connected to the Reset button and reloads the page so the player can retsart the quiz and the timer.*/
+function refresh(){
+    window.location.reload("Refresh")
+  }
