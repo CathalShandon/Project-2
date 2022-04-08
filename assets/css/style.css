@@ -21,7 +21,9 @@ body {
     padding: 15px;
     color: #fff;
 }
-
+h2 {
+    color: #fff;
+}
 
 /* navigation links */
 .menu-bar {
@@ -73,7 +75,7 @@ body {
 	border-radius: 30px;
 }
 .headline {
-    background-color:darkgrey;
+    background-color: #fff;
     position: absolute;
     top: 40%;
     padding: 10px; 
@@ -85,14 +87,15 @@ body {
 	position: relative;
     transform: translate(128px, -376px);
     font-size: 36px;
-    background-color:blue;
-    color:darkgray; 
+    background-color:#06467F;
+    color: darkgray; 
     cursor: pointer;
 }
 /* home page */
 .go-to-quiz {
     color: #fff;
     text-decoration: none;
+    background-color: #06467F;
     
 }
 .go-to-quiz:hover{
@@ -102,7 +105,7 @@ body {
 /* --------- Game layout */
 
 #quiz-container {
-    background-color: aqua;
+    background-color:#06467F;
     margin: 5rem 12rem;
     border-radius: 2rem;
 }
@@ -110,6 +113,7 @@ body {
     text-align: center;
     padding-top: 2rem;
     font-size: 23px;
+    color: #fff;
 }
 .option:hover{
     color: white;
@@ -117,16 +121,34 @@ body {
 ol{
     display: inline-block;
     padding: 0 1.5rem;
-    color: rgb(1,73,73);
+    color: #fff;
     font-size: 22px;
+    
+}
+#option0:hover {
+    font-size: 27px;
+    cursor: pointer;
+}
+#option1:hover {
+    font-size: 27px;
+    cursor: pointer;
+}
+#option2:hover {
+    font-size: 27px;
+    cursor: pointer;
+}
+#option3:hover {
+    font-size: 27px;
     cursor: pointer;
 }
 #questionCount {
     font-size: 22px;
+    color: #fff;
 }
 p {
     display: inline-block;
     font-size: 20px;
+    color: #fff;
 }
 .buttons {
     font-size: 20px;
@@ -139,15 +161,18 @@ p {
     font-size: 27px;
 }
 .form-layout {
-    background-color: aqua;
+    border-radius: 3rem;
 }
 /* feeback page */
 .contact-form {
-    background-color: aqua;
+    background-color: #06467F;
     margin: 5rem 15rem 5rem 15rem;
     padding: 1rem;
+    border-radius: 3rem;
 }
-/* feeback page */
+#feedback {
+    position: relative;
+}
 #contact-heading {
     text-align: center;
 }
@@ -158,12 +183,18 @@ p {
 }
 .contact-details {
     font-size: 22px;
+    color: #fff;
 }
 #email {
     font-size: 22px;
+    color: #fff;
 }
 #fname.text-adjust {
     font-size: 22px;
+    color: #fff;
+}
+#label {
+    color: #fff;
 }
 #additional-remarks {
     width: 700px;
