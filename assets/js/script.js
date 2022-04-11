@@ -89,10 +89,12 @@ var option3 = document.getElementById('option3');
 var next = document.querySelector('.next');
 var points = document.getElementById('score');
 var span = document.querySelectorAll('span');
+const TIMEOUT_SECONDS = 200;
 var i = 0;
 var score = 0;
+var incorrect = 0;
 
-//Function to display questions
+/*Function to display questions*/
 function displayQuestion() {
     for (var a=0;a<span.length;a++){
         span[a].style.background='none';
@@ -105,18 +107,19 @@ function displayQuestion() {
     questionCount.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
 }
 
-//Function to calculate scores
+/*Function to calculate scores*/
 function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
         score= score+1;
         document.getElementById(e.id).style.background= 'limegreen';
+
     } else {
         document.getElementById(e.id).style.background= 'tomato';
     }
     setTimeout(nextQuestion,300);
 }
 
-//Function to display next question
+/*Function to display next question*/
 function nextQuestion(){
     if(i<questionBank.length-1)
     {
@@ -129,15 +132,18 @@ function nextQuestion(){
     }
 }
 
-//Click events to next button
+/*Click events to next button*/
 next.addEventListener('click',nextQuestion);
-
-//Back to Quiz button event
+/* Click to reset quiz */
+function refresh(){
+    window.location.reload("Refresh")
+  }
+/*Back to Quiz button event*/
 function backToQuiz(){
     location.reload();
 }
 
-//Function to check Answers
+/*Function to check Answers*/
 function checkAnswer(){
     var answerBank= document.getElementById('answerBank');
     
@@ -158,10 +164,8 @@ displayQuestion();
 /**
  * Gets the current score from the DOM and increments it by 1
  */
- function incrementScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+ function increamentScore(correctAnswerCount) {
+    document.getElementById("right-answer").innerText = correctAnswerCount;
 
 }
 
@@ -170,15 +174,15 @@ displayQuestion();
  */
 function incrementWrongAnswer() {
 
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("wrong-answer").innerText);
+    document.getElementById("wrong-answer").innerText = ++oldScore;
     
 }
 function checkAnswer() {
 
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[0];
+    let isCorrect = userAnswer === calculatedAnswer[1];
 
     runGame(calculatedAnswer[1]);
 
@@ -186,7 +190,29 @@ function checkAnswer() {
 
 /* Countdown timer */
 
-/* Connected to the Reset button and reloads the page so the player can retsart the quiz and the timer.*/
-function refresh(){
-    window.location.reload("Refresh")
-  }
+var timeleft = 150;
+
+var downloadTimer = setInterval(function(){
+
+    if(timeleft === -1){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Times Up!";
+        alert(`Oh no! You've have run out of time. Hit the reset button and try again.`); // displays prompt message on screen to the user
+        throw `Player ran out of time. Need to restart the game`; // logs an error in the console
+
+    } else {
+    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+    }
+    timeleft -= 1;
+
+}, 1000);
+// Created a counter variable that counts up to five clicks for the 'Next' button and stops the alert from displaying.
+document.getElementById("next").onclick = function() {myFunction()};
+  var count = 0 ;
+  
+function myFunction() {
+count+=1;
+        if (countd==15)        
+              alert = function() {};
+        
+}

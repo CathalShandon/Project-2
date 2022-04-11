@@ -23,6 +23,7 @@ body {
 }
 h2 {
     color: #fff;
+    font-size: 23px;
 }
 
 /* navigation links */
@@ -61,6 +62,7 @@ h2 {
 	height: 90vh;
 	justify-content: center;
 	align-items: center;
+    
 }
 .hero {
 	height: 85%;
@@ -82,6 +84,7 @@ h2 {
     font-size: 29px;
     transform: translate(414px, -50px);
     color:#a41e42;
+    border-radius: 23rem;
 }
 .start-quiz {
 	position: relative;
@@ -90,20 +93,31 @@ h2 {
     background-color:#06467F;
     color: darkgray; 
     cursor: pointer;
+    border-radius: 25rem;
 }
+
+
 /* home page */
 .go-to-quiz {
     color: #fff;
     text-decoration: none;
     background-color: #06467F;
-    
+    border-radius: 25rem;
 }
+
 .go-to-quiz:hover{
     border-radius: 10px;
     font-size: 50px;
+    color: #06467F;
+    background-color: #fff;
+    text-decoration: underline;
 }
-/* --------- Game layout */
-
+/* Game layout */
+#countdown {
+    color: #fff;
+    font-size: 23px;
+    padding-top: 13px;
+}
 #quiz-container {
     background-color:#06467F;
     margin: 5rem 12rem;
@@ -111,7 +125,6 @@ h2 {
 }
 #question {
     text-align: center;
-    padding-top: 2rem;
     font-size: 23px;
     color: #fff;
 }
@@ -155,9 +168,11 @@ p {
 }
 .next {
     font-size: 22px;
+    border-radius: 7px;
 }
 .refresh {
     font-size: 22px;
+    border-radius: 7px;
 }
 .next:hover {
     cursor: pointer;
@@ -215,7 +230,6 @@ p {
 #contact-heading {
     text-align: center;
 }
-
 #comment {
     width: 850px;
     height: 330px;
@@ -245,4 +259,14 @@ p {
 .submit-button:hover {
     cursor: pointer;
     font-size: 24px;
+}
+#scoreboard, #answerBank {
+    width: 20rem;
+    background: rgba(230,230,250,0.77);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
 }
