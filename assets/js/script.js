@@ -113,6 +113,7 @@ function calcScore(e){
         score= score+1;
         document.getElementById(e.id).style.background= 'limegreen';
 
+
     } else {
         document.getElementById(e.id).style.background= 'tomato';
     }
@@ -128,7 +129,7 @@ function nextQuestion(){
     } else {
         points.innerHTML= score+ '/'+ questionBank.length;
         quizContainer.style.display= 'none';
-        scoreboard.style.display= 'block'
+        scoreboard.style.display= 'block';
     }
 }
 
@@ -136,7 +137,7 @@ function nextQuestion(){
 next.addEventListener('click',nextQuestion);
 /* Click to reset quiz */
 function refresh(){
-    window.location.reload("Refresh")
+    window.location.reload("Refresh");
   }
 /*Back to Quiz button event*/
 function backToQuiz(){
@@ -166,6 +167,12 @@ displayQuestion();
  */
  function increamentScore(correctAnswerCount) {
     document.getElementById("right-answer").innerText = correctAnswerCount;
+
+}
+function incrementScore() {
+
+    let score = parseInt(document.getElementById("right-answer").innerText);
+    document.getElementById("right-answer").innerText = ++score;
 
 }
 
@@ -206,13 +213,3 @@ var downloadTimer = setInterval(function(){
     timeleft -= 1;
 
 }, 1000);
-// Created a counter variable that counts up to five clicks for the 'Next' button and stops the alert from displaying.
-document.getElementById("next").onclick = function() {myFunction()};
-  var count = 0 ;
-  
-function myFunction() {
-count+=1;
-        if (countd==15)        
-              alert = function() {};
-        
-}

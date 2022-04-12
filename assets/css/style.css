@@ -12,7 +12,6 @@ body {
     background-size: cover;
     font-family: "Raleway", sans-serif;
     text-align: center;
-
 }
 
 #heading {
@@ -79,23 +78,31 @@ h2 {
 .headline {
     background-color: #fff;
     position: absolute;
-    top: 40%;
+    top: 17%;
     padding: 10px; 
     font-size: 29px;
-    transform: translate(414px, -50px);
     color:#a41e42;
     border-radius: 23rem;
 }
 .start-quiz {
 	position: relative;
-    transform: translate(128px, -376px);
     font-size: 36px;
     background-color:#06467F;
     color: darkgray; 
     cursor: pointer;
     border-radius: 25rem;
 }
-
+.home-text {
+    background-color: #06467F;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10rem 20rem;
+    height: 282px;
+    width: 50%;
+    align-items: flex-end;
+    border-radius: 30px;
+}
 
 /* home page */
 .go-to-quiz {
@@ -103,11 +110,16 @@ h2 {
     text-decoration: none;
     background-color: #06467F;
     border-radius: 25rem;
+    position: absolute;
+    top: 49%;
+    margin: -6rem;
+    text-align: center;
+    right: 72%;
 }
 
 .go-to-quiz:hover{
     border-radius: 10px;
-    font-size: 50px;
+    font-size: 40px;
     color: #06467F;
     background-color: #fff;
     text-decoration: underline;
@@ -136,7 +148,6 @@ ol{
     padding: 0 1.5rem;
     color: #fff;
     font-size: 22px;
-    
 }
 #option0:hover {
     font-size: 27px;
@@ -231,7 +242,7 @@ p {
     text-align: center;
 }
 #comment {
-    width: 850px;
+    width: 92%;
     height: 330px;
 }
 .contact-details {
@@ -240,11 +251,9 @@ p {
 }
 #email {
     font-size: 22px;
-    color: #fff;
 }
 #fname.text-adjust {
     font-size: 22px;
-    color: #fff;
 }
 #label {
     color: #fff;
@@ -260,13 +269,33 @@ p {
     cursor: pointer;
     font-size: 24px;
 }
-#scoreboard, #answerBank {
-    width: 20rem;
-    background: rgba(230,230,250,0.77);
-    padding: 2rem;
-    text-align: center;
-    margin: auto;
-    position: relative;
-    top: 5rem;
-    display: none;
+/* media queies */
+
+/* large to meduim screens from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+
+    #hero-image {
+        width: 100%;
+        height: 0%;
+        padding-top: 95px;
+    }
+    .headline {
+        transform: translate(358px, -57px);
+    }
+    .start-quiz {
+        transform: translate(119px, -415px);
+    }
+
+}
+/* meduim screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+}
+
+
+
+/*For screen size max width 767 px */
+@media screen and (max-width: 767px) {
+    
 }
