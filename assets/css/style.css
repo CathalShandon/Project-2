@@ -23,6 +23,8 @@ body {
 h2 {
     color: #fff;
     font-size: 23px;
+    margin: 2px;
+    padding: 1px;
 }
 
 /* navigation links */
@@ -77,11 +79,18 @@ h2 {
 }
 .headline {
     position: absolute;
-    top: 17%;
+    top: 7%;
     padding: 10px; 
     font-size: 29px;
     color:#fff;
     border-radius: 23rem;
+}
+li {
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    text-align: justify;
+    padding: 2px;
 }
 .start-quiz {
 	position: relative;
@@ -99,7 +108,7 @@ h2 {
     margin: 10rem 20rem;
     height: 282px;
     width: 50%;
-    align-items: flex-end;
+    align-items: center;
     border-radius: 30px;
 }
 
@@ -108,12 +117,13 @@ h2 {
     color: #fff;
     text-decoration: none;
     background-color: #06467F;
-    border-radius: 25rem;
+    border-radius: 7px;
     position: absolute;
     top: 49%;
     margin: -6rem;
     text-align: center;
     right: 72%;
+    padding: 3px;
 }
 
 .go-to-quiz:hover{
@@ -121,13 +131,14 @@ h2 {
     font-size: 40px;
     color: #06467F;
     background-color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 /* Game layout */
 #countdown {
     color: #fff;
     font-size: 23px;
     padding-top: 13px;
+    margin-bottom: 7px;
 }
 #quiz-container {
     background-color:#06467F;
@@ -136,8 +147,9 @@ h2 {
 }
 #question {
     text-align: center;
-    font-size: 23px;
+    font-size: 26px;
     color: #fff;
+    margin-bottom: 11px;
 }
 .option:hover{
     color: white;
@@ -165,8 +177,10 @@ ol{
     cursor: pointer;
 }
 #questionCount {
-    font-size: 22px;
+    font-size: 26px;
     color: #fff;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 p {
     display: inline-block;
@@ -179,10 +193,13 @@ p {
 .next {
     font-size: 22px;
     border-radius: 7px;
+    display: none;
 }
 .refresh {
     font-size: 22px;
     border-radius: 7px;
+    margin-bottom: 15px;
+    padding: 2px;
 }
 .next:hover {
     cursor: pointer;
@@ -216,6 +233,7 @@ p {
     margin-top: 1rem;
     border-radius: 3px;
     font-size: 23px;
+    padding: 2px;
 }
 #score-btn-one:hover {
     cursor: pointer;
@@ -225,6 +243,7 @@ p {
     margin-top: 1rem;
     border-radius: 3px;
     font-size: 23px;
+    padding: 2px;
 }
 #score-btn-two:hover{
     cursor: pointer;
@@ -261,9 +280,13 @@ p {
 }
 #email {
     font-size: 22px;
+    padding: 2px;
+    border-radius: 3px;
 }
 #fname.text-adjust {
     font-size: 22px;
+    padding: 2px;
+    border-radius: 3px;
 }
 #label {
     color: #fff;
@@ -278,6 +301,8 @@ p {
 .submit-button:hover {
     cursor: pointer;
     font-size: 24px;
+    margin-top: 4px;
+    padding: 5px;
 }
 /* media queies */
 
