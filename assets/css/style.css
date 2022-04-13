@@ -76,12 +76,11 @@ h2 {
 	border-radius: 30px;
 }
 .headline {
-    background-color: #fff;
     position: absolute;
     top: 17%;
     padding: 10px; 
     font-size: 29px;
-    color:#a41e42;
+    color:#fff;
     border-radius: 23rem;
 }
 .start-quiz {
@@ -198,13 +197,13 @@ p {
 }
 
 /* Answer sheet */
-#scoreboard,#answerBank{
+#scoreboard{
     width: 20rem;
-    background: rgba(230,230,250,0.77);
+    background-color:#06467F;
     padding: 2rem;
     text-align: center;
     margin: auto;
-    position: relative;
+
     top: 5rem;
     display: none;
 }
@@ -213,18 +212,17 @@ p {
 }
 #score-btn-one,#check-answer{
     margin-top: 1rem;
+    border-radius: 3px;
 }
 #score-btn-two{
     margin-top: 1rem;
+    border-radius: 3px;
 }
 #score{
     font-size: 2.5rem;
+    color: #fff;
 }
-#answerBank li{
-    text-align: left;
-    margin-bottom: 0.2rem;
-    font-size: larger;
-}
+
 #answers{
     margin-top: 1rem;
 }

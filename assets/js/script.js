@@ -81,7 +81,7 @@ let questionBank = [
 
 var question = document.getElementById('question');
 var quizContainer = document.getElementById('quiz-container');
-var scorecard = document.getElementById('scorecard');
+var scoreboard = document.getElementById('scoreboard');
 var option0 = document.getElementById('option0');
 var option1 = document.getElementById('option1');
 var option2 = document.getElementById('option2');
@@ -92,7 +92,8 @@ var span = document.querySelectorAll('span');
 const TIMEOUT_SECONDS = 200;
 var i = 0;
 var score = 0;
-var incorrect = 0;
+var correctAnswer = 0;
+var incorrectAnswer = 0;
 
 /*Function to display questions*/
 function displayQuestion() {
@@ -166,12 +167,12 @@ displayQuestion();
  * Gets the current score from the DOM and increments it by 1
  */
  function increamentScore(correctAnswerCount) {
-    document.getElementById("right-answer").innerText = correctAnswerCount;
+    document.getElementById("score").innerText = correctAnswerCount;
 
 }
 function incrementScore() {
 
-    let score = parseInt(document.getElementById("right-answer").innerText);
+    let score = parseInt(document.getElementById("score").innerText);
     document.getElementById("right-answer").innerText = ++score;
 
 }
@@ -181,8 +182,8 @@ function incrementScore() {
  */
 function incrementWrongAnswer() {
 
-    let oldScore = parseInt(document.getElementById("wrong-answer").innerText);
-    document.getElementById("wrong-answer").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("minus-point").innerText);
+    document.getElementById("minus-point").innerText = ++oldScore;
     
 }
 function checkAnswer() {
@@ -197,15 +198,15 @@ function checkAnswer() {
 
 /* Countdown timer */
 
-var timeleft = 150;
+var timeleft = 120;
 
 var downloadTimer = setInterval(function(){
 
     if(timeleft === -1){
         clearInterval(downloadTimer);
         document.getElementById("countdown").innerHTML = "Times Up!";
-        alert(`Oh no! You've have run out of time. Hit the reset button and try again.`); // displays prompt message on screen to the user
-        throw `Player ran out of time. Need to restart the game`; // logs an error in the console
+        alert(`You have run out of time. Hit the reset button and try again.`); // displays prompt message on screen to the user
+        throw `The Player ran out of time. Need to restart the game`; // logs an error in the console
 
     } else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";

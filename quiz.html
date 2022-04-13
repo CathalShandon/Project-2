@@ -58,27 +58,25 @@
 
 <!--section for storing the score for correct and incorrect answers-->
 <div class="score">
-  <p class="plus-point">Correct Answers:&nbsp;&nbsp; 
-    <span id="right-answer">0
+  <p class="scores">Correct Answers:&nbsp;&nbsp; 
+    <span id="correct-answer">0
     </span>
   </p>
-  <p class="minus-point">Incorrect Answers:&nbsp;&nbsp; 
-    <span id="wrong-answer">0
+  <p class="scores">Incorrect Answers:&nbsp;&nbsp; 
+    <span id="incorrect-answer">0
     </span>
   </p>
 </div>
 </div>
 </section>
 
-<!-- answers section -->
-<div id="answerBank">
-  <h2>Answers :</h2>
-  <ol type="1" id="answers">
-  </ol>
-  
-  <button type="button" id="score-btn-two" onclick="backToQuiz()">Back to Quiz</button>
+<!-- scoreboard section -->
+<div id="scoreboard">
+  <h2 id="score-title">Your Score</h2>
+  <div id="score">0/15</div>
+  <button type="button" id="score-btn-one" onclick="backToQuiz()">Back to Quiz</button>
+  <button type="button" id="feedback-page" onclick="checkAnswer()">Feedback</button>
 </div>
-
 
 
 
