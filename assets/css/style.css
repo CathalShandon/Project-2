@@ -198,25 +198,37 @@ p {
 
 /* Answer sheet */
 #scoreboard{
-    width: 20rem;
+    width: 30rem;
     background-color:#06467F;
     padding: 2rem;
     text-align: center;
     margin: auto;
-
     top: 5rem;
     display: none;
+    margin-top: 7rem;
+    border-radius: 7px;
 }
 #score-title{
     margin: 1rem 0;
+    font-size: 28px;
 }
-#score-btn-one,#check-answer{
+#score-btn-one{
     margin-top: 1rem;
     border-radius: 3px;
+    font-size: 23px;
+}
+#score-btn-one:hover {
+    cursor: pointer;
+    font-size: 27px;
 }
 #score-btn-two{
     margin-top: 1rem;
     border-radius: 3px;
+    font-size: 23px;
+}
+#score-btn-two:hover{
+    cursor: pointer;
+    font-size: 27px;
 }
 #score{
     font-size: 2.5rem;
@@ -273,16 +285,12 @@ p {
 
 @media screen and (max-width: 1200px) {
 
-    #hero-image {
-        width: 100%;
-        height: 0%;
-        padding-top: 95px;
-    }
+   
     .headline {
-        transform: translate(358px, -57px);
+  
     }
     .start-quiz {
-        transform: translate(119px, -415px);
+     
     }
 
 }

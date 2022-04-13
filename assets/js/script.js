@@ -136,65 +136,20 @@ function nextQuestion(){
 
 /*Click events to next button*/
 next.addEventListener('click',nextQuestion);
+
 /* Click to reset quiz */
 function refresh(){
     window.location.reload("Refresh");
   }
+
 /*Back to Quiz button event*/
 function backToQuiz(){
     location.reload();
 }
 
-/*Function to check Answers*/
-function checkAnswer(){
-    var answerBank= document.getElementById('answerBank');
-    
-    var answers= document.getElementById('answers');
-    answerBank.style.display= 'block';
-    scoreboard.style.display= 'none';
-    
-    for(var a=0;a<questionBank.length;a++) {
-        var list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
-        answers.appendChild(list);
-    }
-}
-
 
 displayQuestion();
 
-/**
- * Gets the current score from the DOM and increments it by 1
- */
- function increamentScore(correctAnswerCount) {
-    document.getElementById("score").innerText = correctAnswerCount;
-
-}
-function incrementScore() {
-
-    let score = parseInt(document.getElementById("score").innerText);
-    document.getElementById("right-answer").innerText = ++score;
-
-}
-
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
- */
-function incrementWrongAnswer() {
-
-    let oldScore = parseInt(document.getElementById("minus-point").innerText);
-    document.getElementById("minus-point").innerText = ++oldScore;
-    
-}
-function checkAnswer() {
-
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
-    let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[1];
-
-    runGame(calculatedAnswer[1]);
-
-}
 
 /* Countdown timer */
 

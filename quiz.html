@@ -12,8 +12,8 @@
     <div id="heading">
       <h1 class="title">How well do you know Europe?</h1>
     </div>
-   <!--Navigation bar-->
-   <div class="menu-bar">
+       <!--Navigation bar-->
+      <div class="menu-bar">
     <ul id="navigation">
       <li>
         <a href="index.html" class="active">Home
@@ -29,54 +29,40 @@
         
       </li>
     </ul>
-  </div>
-<!-- quiz-container -->
-   <div id="quiz-container">
-   <!-- question container -->
-   <div class="questions">
-    <div id="countdown"></div>
+    </div>
+    <!-- quiz-container -->
+    <div id="quiz-container">
+      <!-- question container -->
+      <div class="questions">
+        <div id="countdown"></div>
 
-    <!--<div id='timer'> 
-    </div>-->
+       <!--<div id='timer'> 
+       </div>-->
    
-    <div id="question"></div>
-    <ol type="A">
-        <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-        <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-        <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-        <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
-    </ol>
-    <div id="questionCount"></div>
+        <div id="question"></div>
+         <ol type="A">
+         <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+         <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+         <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+         <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+         </ol>
+        <div id="questionCount"></div>
 
-    <div class="buttons">
+        <div class="buttons">
         <button type="button" class="next">Next</button>
         <button type="button"  class="refresh" value="Refresh" onClick="refresh(this)">Reset</button>
+        </div>
+      </div>
     </div>
     
-    
-    
-
-<!--section for storing the score for correct and incorrect answers-->
-<div class="score">
-  <p class="scores">Correct Answers:&nbsp;&nbsp; 
-    <span id="correct-answer">0
-    </span>
-  </p>
-  <p class="scores">Incorrect Answers:&nbsp;&nbsp; 
-    <span id="incorrect-answer">0
-    </span>
-  </p>
-</div>
-</div>
-</section>
-
+  
 <!-- scoreboard section -->
-<div id="scoreboard">
-  <h2 id="score-title">Your Score</h2>
-  <div id="score">0/15</div>
-  <button type="button" id="score-btn-one" onclick="backToQuiz()">Back to Quiz</button>
-  <button type="button" id="feedback-page" onclick="checkAnswer()">Feedback</button>
-</div>
+    <div id="scoreboard">
+    <h2 id="score-title">Your Score:</h2>
+    <div id="score">0/15</div>
+    <button type="button" id="score-btn-one" onclick="backToQuiz()">Retry Quiz</button>
+    <button type="button" id="score-btn-two" onclick="feedback.html">Feedback</button>
+    </div>
 
 
 
