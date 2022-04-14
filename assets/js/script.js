@@ -92,8 +92,7 @@ var span = document.querySelectorAll('span');
 const TIMEOUT_SECONDS = 200;
 var i = 0;
 var score = 0;
-var correctAnswer = 0;
-var incorrectAnswer = 0;
+
 
 /*Function to display questions*/
 function displayQuestion() {
