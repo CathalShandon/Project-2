@@ -147,7 +147,6 @@ function backToQuiz(){
     location.reload();
 }
 
-
 displayQuestion();
 
 
@@ -168,4 +167,4 @@ var downloadTimer = setInterval(function(){
     }
     timeleft -= 1;
 
-}, 1000);
+}, 1000) ;
