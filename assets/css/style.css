@@ -1,4 +1,4 @@
-/*--- global style */
+/*-global style */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("/assets/images/europe.png");
+    background-image: url("../images/europe.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Raleway", sans-serif;
