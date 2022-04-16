@@ -1,13 +1,14 @@
 # Quiz on the captial cities of Europe
 
 ## Introduction 
+This project is aimed to design the online quiz app which allows to test the knowledge we have on the captials of Europe. There is three pages ther first being the quiz rules and a button whihc whne clicked brings you to start of quiz, second being the quiz and the third being a feedback page which gives the user a chance to give their opinion on any changes they might want to see.
 
 
 
+A live website can be found [here](https://cathalshandon.github.io/Project-2/)
 
-A live website can be found [here]
+![website preview](assets/images/mockup.png)
 
-## Table of Contents 
 
 # Table of Contents
 [1. User Expereince (UX) design](#ux)
@@ -59,7 +60,9 @@ A live website can be found [here]
 ## 1.3 Site Skeleton
   [Go to the top](#table-of-contents)
 
-
+![Home page](/assets/images/wireframe-home.png)
+![Quiz page](/assets/images/wireframe-quiz.png)
+![Feedback page](/assets/images/wireframe-feedback.png)
 
 
 
@@ -89,7 +92,7 @@ A live website can be found [here]
 
 The screenshot is below:
 ![quiz page preview](/assets/images/quiz.png)
-
+Screenshot of the scorecard
 ![quiz page preview](/assets/images/score.png)
 
   ### Feedback page:
@@ -189,6 +192,7 @@ Accessibility | Checked the accessibility of the page using lighthouse| PASS
 
 ### Solved bugs
   - I discovered missing semicolon in several lines of javascript code which was solved after validation with Jshint.
+  - When I deployed my website on github the backround image wasn't showing with url("/assets/images/europe.png"); so instead i changed it to - url("../images/europe.png"); and it then displayed.
 
   <a name="deployment"></a>
 # 6. Deployment
@@ -201,7 +205,7 @@ The site was deployed to GitHub pages using the following steps:
 - Select pages on the left menu bar.
 - Click on the master branch and save.
 - This will now generate a link with your website live.
-- The live link can be found here - (
+- The live link can be found here - (https://cathalshandon.github.io/Project-2/)
 
   <a name="acknowledgement"></a>
 # 7. Acknowledgement
