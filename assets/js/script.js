@@ -1,77 +1,77 @@
 /* array of Questions and Answers.*/
 let questionBank = [
     {
-        question : 'What is the captial of France?',
+        question : 'What is the capital of France?',
         option : ['Luxemberg', 'Paris', 'Vienna', 'Glasglow'],
         answer : 'Paris'
     },
     {
-        question : 'What is the captial of Croatia?',
+        question : 'What is the capital of Croatia?',
         option : ['Lyon', 'Berlin', 'Zagreb', 'Moscow'],
         answer : 'Zagreb'
     },
     {
-        question : 'What is the captial of Austria?',
+        question : 'What is the capital of Austria?',
         option : ['Vienna', 'Salzburg', 'Turin', 'Riga'],
         answer : 'Vienna'
     },
     {
-        question : 'What is the captial of Moldova?',
+        question : 'What is the capital of Moldova?',
         option : ['Balti', 'Sofia', 'Szeged', 'Chisinau'],
         answer : 'Chisinau'
     },
     {
-        question : 'What is the captial of Ukraine?',
+        question : 'What is the capital of Ukraine?',
         option : ['Odesa', 'Angers', 'Kiev', 'Hamburg'],
         answer : 'Kiev'
     },
     {
-        question : 'What is the captial of Greece?',
+        question : 'What is the capital of Greece?',
         option : ['Sarajevo', 'Zadara', 'Krakow', 'Athens'],
         answer : 'Athens'
     },
     {
-        question : 'What is the captial of Bulgaria?',
+        question : 'What is the capital of Bulgaria?',
         option : ['Plovdiv', 'Sofia', 'Bari', 'Burgos'],
         answer : 'Sofia'
     },
     {
-        question : 'What is the captial of Portugal?',
+        question : 'What is the capital of Portugal?',
         option : ['Porto', 'Lisbon', 'Vigo', 'Zaragoza'],
         answer : 'Lisbon'
     },
     {
-        question : 'What is the captial of Switzerland?',
+        question : 'What is the capital of Switzerland?',
         option : ['Zurich', 'Hamburg', 'Bremen', 'Bern'],
         answer : 'Bern'
     },
     {
-        question : 'What is the captial of Belgium?',
+        question : 'What is the capital of Belgium?',
         option : ['Ghent', 'Brussels', 'Reims', 'Dresden'],
         answer : 'Brussels'
     },
     {
-        question : 'What is the captial of Scotland?',
+        question : 'What is the capital of Scotland?',
         option : ['Athens', 'Glasglow', 'Brest', 'Edinburgh'],
         answer : 'Edinburgh'
     },
     {
-        question : 'What is the captial of Slovenia?',
+        question : 'What is the capital of Slovenia?',
         option : ['Bratislava', 'Ljubljana', 'Maribor', 'Graz'],
         answer : 'Ljubljana'
     },
     {
-        question : 'What is the captial of Slovakia?',
+        question : 'What is the capital of Slovakia?',
         option : ['Eger', 'Bratislava', 'Linz', 'Split'],
         answer : 'Bratislava'
     },
     {
-        question : 'What is the captial of Bosnia and Herzegovina?',
+        question : 'What is the capital of Bosnia and Herzegovina?',
         option : ['Sarajeve', 'Tuzla', 'Debrecen', 'Presov'],
         answer : 'Sarajevo'
     },
     {
-        question : 'What is the captial of North Macedonia?',
+        question : 'What is the capital of North Macedonia?',
         option : ['Bitola', 'Durres', 'Tirana', 'Skopje'],
         answer : 'Skopje'
     },

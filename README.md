@@ -1,7 +1,7 @@
-# Quiz on the captial cities of Europe
+# Quiz on the capital cities of Europe
 
 ## Introduction 
-This project is aimed to design the online quiz app which allows to test the knowledge we have on the captials of Europe. There is three pages ther first being the quiz rules and a button whihc whne clicked brings you to start of quiz, second being the quiz and the third being a feedback page which gives the user a chance to give their opinion on any changes they might want to see.
+This project is aimed to design the online quiz app which allows to test the knowledge we have on the capitals of Europe. There is three pages the first being the quiz rules and a button which when clicked brings you to start of quiz, second being the quiz and the third being a feedback page which gives the user a chance to give their opinion on any changes they might want to see.
 
 
 
