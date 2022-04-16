@@ -14,7 +14,7 @@ A live website can be found [here](https://cathalshandon.github.io/Project-2/)
 [1. User Expereince (UX) design](#ux)
   - [User Goals:](#user-goals)
   - [User Expectations:](#user-expectations)
-  - [Site skeleton (wireframes)-3 pages](#wireframes)
+  - [Site skeleton (wireframes)](#wireframes)
     - [Home page](#home-page)
     - [Quiz page](#quiz-page)
     - [Feedback page](#feedback-page)
@@ -60,8 +60,18 @@ A live website can be found [here](https://cathalshandon.github.io/Project-2/)
 ## 1.3 Site Skeleton
   [Go to the top](#table-of-contents)
 
+<a name="home-page"></a>
+### Home Page
+
 ![Home page](/assets/images/wireframe-home.png)
+
+<a name="quiz-page"></a>
+### Quiz Page
+
 ![Quiz page](/assets/images/wireframe-quiz.png)
+<a name="feedback-page"></a>
+### Feedback Page
+
 ![Feedback page](/assets/images/wireframe-feedback.png)
 
 
